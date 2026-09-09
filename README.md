@@ -64,5 +64,25 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Advancell is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/advancell
+AdvanCell is a vertically integrated, clinical-stage radiopharmaceutical company developing targeted
+alpha therapies (TAT) for cancer, built around lead-212 (Pb-212) alpha-emitting isotopes and its own
+isotope production and supply chain. Its lead candidate, 212Pb-ADVC001, is in clinical development for
+metastatic prostate cancer. The company operates GMP radiochemistry and sterile manufacturing across
+Sydney, Brisbane (Translational Research Institute; Richlands) and Adelaide in Australia, with a global
+headquarters in the Greater Boston area.
+
+## API surface
+
+**AdvanCell publishes no public API.** As of 2026-09-09 there is no developer portal, no documentation
+host, no `api.` or `developer.` subdomain, and no machine-readable contract of any kind. Every contract
+discovery probe against `www.advancell.com.au` and `advancell.com.au` returned 404 — `/openapi.json`,
+`/openapi.yaml`, `/swagger.json`, `/api-docs`, `/apis.json`, `/graphql`, `/llms.txt` and the five named
+`/.well-known/` paths plus both A2A agent-card paths. The only machine-readable endpoint on the domain
+is `/wp-json/`, the default WordPress core and plugin route index behind the marketing site; it is a CMS
+default rather than a published API and is deliberately not cataloged as one.
+
+This is an honest zero, not a gap in our research. A pre-commercial therapeutics developer has no
+reason to ship a developer program.
+
+- Website: https://www.advancell.com.au/
+- Profile source: https://equityzen.com/company/advancell

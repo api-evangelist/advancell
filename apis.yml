@@ -1,23 +1,97 @@
 aid: advancell
-name: Advancell
-description: 'Advancell is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: AdvanCell
+description: >-
+  AdvanCell is a vertically integrated, clinical-stage radiopharmaceutical company developing targeted
+  alpha therapies (TAT) for cancer, built around lead-212 (Pb-212) alpha-emitting isotopes and a
+  proprietary, scalable isotope production and supply chain. Its lead candidate, 212Pb-ADVC001, is in
+  clinical development for metastatic prostate cancer, and the company operates GMP radiochemistry and
+  sterile manufacturing capability across Sydney, Brisbane (Translational Research Institute and
+  Richlands) and Adelaide in Australia, with a global headquarters established in the Greater Boston
+  area. AdvanCell is a private, venture-backed biotechnology company; it publishes no public developer
+  program, API, or machine-readable API contract.
 url: https://raw.githubusercontent.com/api-evangelist/advancell/refs/heads/main/apis.yml
+image: https://www.advancell.com.au/wp-content/uploads/2025/04/advancell-og-image.jpg
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: no-public-api
+x-tier-reason: 'Enrichment pass 2026-09-09: clinical-stage biotech, no developer program or machine-readable API contract on any host probed.'
 specificationVersion: '0.20'
 created: '2026-09-09'
 modified: '2026-09-09'
+position: Producing
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Health
+- Oncology
+- Radiopharmaceuticals
+- Life Sciences
+- Clinical Trials
+- Australia
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-09-09'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    AdvanCell is a private clinical-stage radiopharmaceutical developer whose entire public surface is an
+    eleven-page WordPress marketing site (Home, Company, Partners and Investors, News, Contact, four
+    policy pages, ESMO2025, coming-soon) with no developer, docs or api subdomain and no product to
+    integrate with; every OpenAPI/GraphQL/well-known/agent-card path probed on www.advancell.com.au
+    returned 404, and the only JSON endpoint on the domain is the default WordPress core /wp-json/ route
+    index, which is a CMS default rather than a published API.
+  evidence:
+  - url: https://www.advancell.com.au/openapi.json
+    status: 404
+  - url: https://www.advancell.com.au/.well-known/agent-card.json
+    status: 404
+  - url: https://www.advancell.com.au/graphql
+    status: 404
+  - url: https://www.advancell.com.au/llms.txt
+    status: 404
+  - url: https://www.advancell.com.au/wp-json/
+    status: 200
+  - url: https://www.advancell.com.au/page-sitemap.xml
+    status: 200
+  checked: '2026-09-09'
 common:
+- type: DomainSecurity
+  url: security/advancell-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/advancell
+  url: https://www.advancell.com.au/
+- type: About
+  url: https://www.advancell.com.au/company/
+- type: Newsroom
+  url: https://www.advancell.com.au/news/
+- type: Contact
+  url: https://www.advancell.com.au/contact/
+- type: InvestorRelations
+  url: https://www.advancell.com.au/partners-and-investors/
+- type: Careers
+  url: https://jobs.lever.co/advancell
+- type: TermsOfService
+  url: https://www.advancell.com.au/terms/
+- type: PrivacyPolicy
+  url: https://www.advancell.com.au/privacy/
+- type: x-cookie-policy
+  url: https://www.advancell.com.au/cookies/
+- type: x-acceptable-use-policy
+  url: https://www.advancell.com.au/acceptable-use/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/advancell/
+- type: LLMsTxt
+  url: llms/advancell-llms.txt
+- type: Plans
+  url: plans/advancell-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/advancell-rate-limits.yml

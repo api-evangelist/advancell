@@ -1,0 +1,57 @@
+generated: '2026-09-09'
+method: probed
+source: live HTTPS probes of the named /.well-known/ paths on every host this record knows
+note: >-
+  Every named /.well-known/ path was probed on the registrable domain and its www host and returned 404
+  (the apex host 301-redirects to www, so the www result is the authoritative one). The 404 body is the
+  site's WordPress theme 404 page, not a document. No WellKnown or SecurityTxt pointer is emitted,
+  because a recorded absence is not a served surface. AdvanCell has no API host, no docs host and no
+  console host, so there is no further host to probe; jobs.lever.co is a third-party ATS AdvanCell does
+  not control and was deliberately excluded.
+hosts:
+- host: www.advancell.com.au
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: advancell.com.au
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 301
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    file: null
+  - path: /.well-known/api-catalog
+    status: 301
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 301
+    file: null
+  - path: /.well-known/agent.json
+    status: 301
+    file: null

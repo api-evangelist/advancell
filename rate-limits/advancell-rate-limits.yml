@@ -1,0 +1,32 @@
+generated: '2026-09-09'
+method: probed
+source: >-
+  Response headers observed on https://www.advancell.com.au/ and
+  https://www.advancell.com.au/wp-json/wp/v2/posts on 2026-09-09.
+limit_count: 0
+description: >-
+  AdvanCell publishes no rate limits and returns no rate-limit headers. This is an honest zero measured
+  from live responses, not an unchecked field. There is no developer documentation in which a limit could
+  be published, because there is no developer programme and no API product — the only JSON endpoint on
+  the domain is the default WordPress core route index behind the marketing site.
+limits: []
+response_headers:
+  observed: []
+  checked_for: [RateLimit-Limit, RateLimit-Remaining, RateLimit-Reset, X-RateLimit-Limit, X-RateLimit-Remaining,
+    X-RateLimit-Reset, Retry-After]
+  note: >-
+    None of the seven headers above appeared on any observed response. The only pagination signalling
+    present is WordPress core's own X-WP-Total / X-WP-TotalPages, which is not a rate-limit signal.
+exhaustion_status: null
+enforcement:
+  documented: false
+  inferred: >-
+    The site is served by LiteSpeed with LiteSpeed Cache and carries an All-in-One Security (aios/v1)
+    route namespace in its WordPress route index, so request throttling very likely exists at the edge.
+    It is undocumented and unsignalled, so an automated consumer would learn of it only by being blocked.
+    Recorded as inference, explicitly not as a published limit.
+x-evidence:
+  fetched: '2026-09-09'
+  probes:
+  - {url: 'https://www.advancell.com.au/', status: 200, rate_limit_headers: none}
+  - {url: 'https://www.advancell.com.au/wp-json/wp/v2/posts?per_page=1', status: 200, rate_limit_headers: none}

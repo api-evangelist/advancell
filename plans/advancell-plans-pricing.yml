@@ -1,0 +1,24 @@
+generated: '2026-09-09'
+method: searched
+source: https://www.advancell.com.au/
+subject: none
+plan_count: 0
+api_plan_count: 0
+description: >-
+  AdvanCell publishes no pricing of any kind. It is a private, clinical-stage radiopharmaceutical company
+  with no commercial product on the market and no API product: there is no pricing page, no plans page,
+  no self-serve sign-up, and no developer tier. This is an honest zero measured against the company's
+  full public site (every page in its Yoast sitemap was enumerated on 2026-09-09; the site has exactly
+  eleven pages and none of them is a pricing page), not an unchecked field. Nothing here should be read
+  as a gap the company ought to close — a pre-commercial therapeutics developer has nothing to price.
+plans: []
+enterprise:
+  contact_only: true
+  note: >-
+    Business development runs through the Partners and Investors page and the contact form, which is
+    normal for a clinical-stage biotech.
+x-evidence:
+  fetched: '2026-09-09'
+  probes:
+  - {url: 'https://www.advancell.com.au/page-sitemap.xml', status: 200, note: 'enumerated all 11 public pages; no pricing/plans page exists'}
+  - {url: 'https://www.advancell.com.au/partners-and-investors/', status: 200, note: 'investor information, no commercial price list'}
