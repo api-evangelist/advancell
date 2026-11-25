@@ -80,19 +80,19 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Advancell Domain Security](https://apis.io/security/advancell/advancell-domain-security/)
+- [AdvanCell Domain Security](https://apis.io/security/advancell/advancell-domain-security/)
 
 #### Plans and pricing (1)
 
 Published plans, tiers and prices.
 
-- [Advancell Plans Pricing](https://apis.io/plans/advancell/advancell-plans-pricing/)
+- [AdvanCell Plans Pricing](https://apis.io/plans/advancell/advancell-plans-pricing/)
 
 #### Rate limits (1)
 
 Published request limits.
 
-- [Advancell Rate Limits](https://apis.io/rate-limits/advancell/advancell-rate-limits/)
+- [AdvanCell Rate Limits](https://apis.io/rate-limits/advancell/advancell-rate-limits/)
 
 ## Where to find this API
 
@@ -104,16 +104,16 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 9.7** — minimal · rubric 0.24.0 · scored 2026-10-17
+**Kin Score 10.4** — minimal · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
-| Discoverability | 56.3 |
+| Discoverability | 57.1 |
 | Contract quality | 0.0 |
 | Contract governance | 0.0 |
 | Operational transparency | 0.0 |
 | Developer ergonomics | 0.0 |
-| Access clarity | 21.1 |
+| Access clarity | 27.7 |
 
 **Agent readiness 2.5** — human-only
 
@@ -138,8 +138,14 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
-**Regulatory alignment 10.9** — Health
+**Regulatory alignment 6.3** — Health
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/advancell/](https://apis.io/providers/advancell/).
 
